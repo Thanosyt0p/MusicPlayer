@@ -25,10 +25,10 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", None)
-        self.API_HASH: str = os.environ.get("API_HASH", None)
+        self.API_ID: str = os.environ.get("API_ID", "27731023")
+        self.API_HASH: str = os.environ.get("API_HASH", "e5533bd0cafa7bfa95205b2aaed57bcb")
         self.SESSION: str = os.environ.get("SESSION", None)
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
+        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "6333624410:AAE80MnoUMn56KkpzpY1uF5t2VQrgrzbfbY")
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
         ]
@@ -37,7 +37,7 @@ class Config:
             quit(0)
         self.SPOTIFY: bool = False
         self.QUALITY: str = os.environ.get("QUALITY", "high").lower()
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
+        self.PREFIXES: list = os.environ.get("PREFIX", "/").split()
         self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
         self.STREAM_MODE: str = (
             "audio"
@@ -45,8 +45,8 @@ class Config:
             else "video"
         )
         self.ADMINS_ONLY: bool = os.environ.get("ADMINS_ONLY", False)
-        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", None)
-        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("SPOTIFY_CLIENT_SECRET", None)
+        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
+        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19")
 
 
 config = Config()
