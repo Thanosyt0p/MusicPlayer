@@ -27,7 +27,7 @@ class Config:
     def __init__(self) -> None:
         self.API_ID: str = os.environ.get("API_ID", "27731023")
         self.API_HASH: str = os.environ.get("API_HASH", "e5533bd0cafa7bfa95205b2aaed57bcb")
-        self.SESSION: str = os.environ.get("SESSION", None)
+        self.SESSION: str = os.environ.get("SESSION", "BQBCE9_aDNBOND7LnSuLpVxQ_5CT_VM1_WtUKHgnkMhxCXBQIGSad-3k3nI5EnIJ94k8Eg1N-9GR9iP34Mkfz8MJQXcGJ-FsfBjdpcHXK0uxMChockwbmuUS-RhCC7etivT2q0c1Ta2egTMRCSMW5KE0mVg3oiI96don-ZzdtAxnDRNFuCKUPjlDQCZWqiZhOjnDByQxbfj1EorfnkXKlxOLxRFp5GDT1C76CsiGUu5d8GVmI7RjUyHcIMeNYq4Gv2aXTq0yhPoHv5IsD-FnEFPKoycRI9LnlHiIcHzSibRGyLdQuWbeAwbKTgFldS4gkz9fBIjIXKrhJr-gxqCGtNgoAAAAAY-q97QA")
         self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "6333624410:AAE80MnoUMn56KkpzpY1uF5t2VQrgrzbfbY")
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
